@@ -3,3 +3,98 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+main {
+  text-align: center;
+  min-height: 100vh;
+}
+
+.d-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.card {
+  width: 20rem;
+  margin: 0 auto;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.bg-img-card {
+  background-image: url("https://images.wallpaperscraft.com/image/single/sea_mountains_landscape_1157827_800x600.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 200px;
+  position: relative;
+}
+
+.discount {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: #5271ff;
+  color: #fff;
+  padding: 5px 10px;
+  width: 30%;
+  text-align: center;
+}
+
+.title-card {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 0 0 2px 0;
+}
+
+.location-card {
+  font-size: 1.2rem;
+  color: #5271ff;
+}
+.location-card:before {
+  content: "🗺 ";
+}
+
+.price-before-card {
+  font-size: 0.8rem;
+  text-decoration: line-through;
+  color: #a6a6a6;
+}
+
+.price-now-card {
+  font-size: 1.5rem;
+  color: #000;
+}
+
+.price {
+  display: block;
+  color: #5271ff;
+}
+
+.price:before {
+  content: "$";
+}
+
+.iva {
+  font-size: 0.8rem;
+  color: #000;
+}
+
+.nights-card {
+  font-size: 1rem;
+  color: #a6a6a6;
+}
+
+.button-card {
+  display: block;
+  min-width: 100px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 8px;
+  background-color: #5271ff;
+  color: #fff;
+  outline: none;
+  border: none;
+}
