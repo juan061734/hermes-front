@@ -1,5 +1,65 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+input[type="radio"].switch {
+  display: none;
+}
+
+label.switch.socket {
+  position: relative;
+  width: auto;
+  text-indent: 6ex;
+}
+span.switch.slider {
+  display: inline-block;
+}
+label.switch.socket span.switch.slider:before {
+  content: "";
+  text-indent: 2.3ex;
+  width: 5.5ex;
+  height: 2.2ex;
+  background: #a6a6a6;
+  border-radius: 5.5ex;
+  position: absolute;
+  left: 0;
+}
+label.switch span.switch.slider:after {
+  content: "";
+  width: 2ex;
+  height: 2ex;
+  background: #fff;
+  border-radius: 5.5ex;
+  position: absolute;
+  left: 0.1ex;
+  top: 0.1ex;
+  transition: 0.2s;
+}
+label.switch.socket input[type="radio"]:checked + span.slider:before {
+  content: "";
+  text-indent: 0.5ex;
+  background: #5271ff;
+}
+label.switch.socket input[type="radio"]:checked + span.slider:after {
+  left: 3.4ex;
+}
+
+.check-group {
+  display: flex;
+  margin-top: 20px;
+}
+
+.input-group {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.input {
+  background-color: transparent;
+  color: #a6a6a6;
+  border: 0;
+  border-bottom: 2px solid #5271ff;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.input:focus {
+  outline: none;
 }
