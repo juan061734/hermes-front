@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Reserva - Isabella</title>
+    <link
+      rel="stylesheet"
+      href="style.css"
+    />
+  </head>
+  <body>
+    <main class="container">
+      <form class="form-reserva">
+        <fieldset class="input-group">
+          <legend class="subtitle">Información Personal</legend> 
+          <div> 
+            <label> 
+              <input
+                type="text"
+                name="nombre"
+                id="nombre"
+                placeholder="Nombre"
+                class="input"
+                required
+                pattern="[a-zA-Z]+"
+              />
+            </label>
+          <label> 
+            <input
+              type="text"
+              name="Apellidos"
+              id="Apellidos"
+              placeholder="Apellidos"
+              class="input"
+              required
+            />
+          </label>
+          <label>  
+            <input
+              type="text"
+              name="Tipo de documento"
+              id="Tipo de documento"
+              placeholder="Tipo de documento"
+              class="input"
+              required
+            />
+          </label>
+            <label> 
+              <input
+                type="text"
+                name="Numero de id"
+                id="Numero de id"
+                placeholder="Numero de id"
+                class="input"
+                required
+                minlength="10"
+                maxlength="12"
+                
+              />
+            </label>
+            <label> 
+              <input
+                type="date"
+                name="Fecha de nacimiento"
+                id="Fecha de nacimiento"
+                placeholder="Fecha de nacimiento"
+                class="input"
+                required
+              />
+            </label>
+            
+            <label class="switch socket">
+              <input
+                type="radio"
+                class="switch"
+                name="sexo"
+              />
+              <span class="switch slider" />
+              Hombre
+            </label>
+            <label class="switch socket">
+              <input
+                type="radio"
+                class="switch"
+                name="sexo"
+              />
+              <span class="switch slider" />
+              Mujer
+            </label>
+        </fieldset>
+            <fieldset>
+                <legend class="subtitle">Información de contacto</legend> 
+                <div> 
+                  <label>
+                    <input
+                      type="tel"
+                      name="Número de teléfono"
+                      id="Número de teléfono"
+                      placeholder="Numero de teléfono"
+                      class="input"
+                      required
+                      pattern="[0-9]+"
+                      minlength="10"
+                      maxlength="10"
+                    />
+                  </label>
+                <label>
+                  <input
+                    type="email"
+                    name="Correo electrónico"
+                    id="Correo electrónico"
+                    placeholder="Correo electrónico"
+                    class="input"
+                    required
+                  />
+                </label>
+                <label> 
+                  <input
+                    type="text"
+                    name="Dirección"
+                    id="Dirección"
+                    placeholder="Dirección"
+                    class="input"
+                    required
+                  />
+                </label>
+                    <input
+                      type="text"
+                      name="Ciudad"
+                      id="Ciudad"
+                      placeholder="Ciudad"
+                      class="input"
+                      required
+                    />
+                  </label>
+             </fieldset>  
+        <input type="submit" value="Reservar">
+      </form>
+    </main>
+  </body>
+</html>

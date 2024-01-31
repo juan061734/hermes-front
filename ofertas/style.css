@@ -1,5 +1,107 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+main {
+  text-align: center;
+}
+
+.text {
+  font-size: 16px;
+  color: #a6a6a6;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.titulo {
+  font-size: 60px;
+  font-family: "Rubik", sans-serif;
+  text-shadow: 0px 0px 5px #00000075;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.card {
+  width: 18rem;
+  padding: 2px;
+  margin: 0 auto;
+  text-align: start;
+}
+
+.bg-img-card {
+  background-image: url("https://images.wallpaperscraft.com/image/single/sea_mountains_landscape_1157827_800x600.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 180px;
+  width: 100%;
+  position: relative;
+}
+
+.discount {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: #5271ff;
+  color: white;
+  width: 30%;
+  padding: 10px;
+  font-size: 20px;
+  font-family: "Rubik", sans-serif;
+  text-align: center;
+}
+
+.card-title {
+  /* text-shadow: 0px 0px 5px #00000075; */
+  font-size: 30px;
+  font-family: "Rubik", sans-serif;
+  margin-top: 8px;
+}
+
+.card-text {
+  font-size: 24px;
+  font-family: "Rubik", sans-serif;
+  color: #5271ff;
+  margin-top: -30px;
+}
+
+.price-before {
+  font-size: 18px;
+  font-family: "Nunito Sans", sans-serif;
+  color: #a6a6a6;
+  margin-top: -15px;
+}
+
+.price-now-title {
+  font-size: 22px;
+  font-family: "Rubik", sans-serif;
+  color: #000000;
+  margin-top: -15px;
+}
+
+.price-now {
+  font-size: 24px;
+  font-family: "Rubik", sans-serif;
+  color: #5271ff;
+  margin-top: -20px;
+}
+
+.iva {
+  color: #000000;
+  font-size: 12px;
+}
+
+.info-nights {
+  font-size: 18px;
+  font-family: "Nunito Sans", sans-serif;
+  color: #a6a6a6;
+  margin-top: -18px;
+}
+
+.btn {
+  background-color: #5271ff;
+  color: aliceblue;
+  border: none;
+  width: 100%;
+  padding: 10px 0;
 }
