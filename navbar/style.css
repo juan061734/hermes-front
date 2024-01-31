@@ -7,28 +7,28 @@
 .navigation{
   display: flex;
   justify-content: space-between;
-  background-color: #5271FF;
-  border-radius: 20px;
+  background-color: #4f8ee0;
+  border-radius: 100px;
 }
 
 ul{
   display: flex;
   list-style: none;
-  margin-top: 5px;
+  margin-top: 20px;
 }
 
 li{
-  margin: 0 10px;
+  margin: 0 70px;
 }
 
 .button-navbar{
   background-color: #FFFFFF;
   border-radius: 20px;
   color: #000;
-  padding: 5px;
+  padding: 10px;
   text-shadow: 2px #000;
 }
 
 header{
-  border-radius: 12px;
+  border-radius: 22px;
 }
