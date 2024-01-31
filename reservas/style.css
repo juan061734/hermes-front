@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+article{
+  background-color: #a6a6a665;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+input {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 2px solid #5271ff;
+  padding: 12px 15px;
+  margin: 8px 0;
+  width: 100%;
+}
+
+div{
+  display: flex;
+
+}
+
+label{
+  display: flex;
+  padding: 10px;
+  margin: 10px;
+}
