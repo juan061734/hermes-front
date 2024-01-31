@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 .subtitle {
   font-size: 1.5rem;
   font-weight: 500;
@@ -10,6 +11,7 @@
   margin-bottom: 1rem;
   text-shadow: #00000085 0px 0px 2px;
 }
+
 .text {
   font-size: 1rem;
   font-weight: 300;

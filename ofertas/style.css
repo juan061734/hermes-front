@@ -1,8 +1,8 @@
-section {
+main {
   text-align: center;
 }
 
-.mini-titulo {
+.text {
   font-size: 16px;
   color: #a6a6a6;
   font-family: "Nunito Sans", sans-serif;
@@ -12,12 +12,13 @@ section {
   font-size: 60px;
   font-family: "Rubik", sans-serif;
   text-shadow: 0px 0px 5px #00000075;
-  margin-top: -10px;
 }
 
 .container {
   display: flex;
   flex-wrap: wrap;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .card {
