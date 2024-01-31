@@ -63,3 +63,10 @@ label.switch.socket input[type="radio"]:checked + span.slider:after {
 .input:focus {
   outline: none;
 }
+
+.container {
+  background-color: #a6a6a665;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+}
