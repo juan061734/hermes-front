@@ -1,9 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 .subtitle {
   font-size: 1.5rem;
   font-weight: 500;
@@ -55,22 +49,22 @@ footer {
   grid-area: social;
   display: flex;
   justify-content: space-between;
+  width: 100%;
 }
 .social ul {
   list-style: none;
   display: flex;
-  gap: 2rem;
+  justify-content: center;
+  gap: 3rem;
+
 }
 .social p {
   font-size: 1rem;
   font-weight: bold;
   color: #5271ff;
-  margin-bottom: 1rem;
   text-shadow: #00000085 0px 0px 2px;
 }
-li {
-  margin: 0.8rem 0;
-}
+
 a {
   text-decoration: none;
   color: #a6a6a6;
