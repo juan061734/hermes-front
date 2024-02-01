@@ -5,11 +5,13 @@ input[type="radio"].switch {
 label.switch.socket {
   position: relative;
   width: auto;
-  text-indent: 6ex;
+  text-indent: 3ex;
 }
+
 span.switch.slider {
   display: inline-block;
 }
+
 label.switch.socket span.switch.slider:before {
   content: "";
   text-indent: 2.3ex;
@@ -20,6 +22,7 @@ label.switch.socket span.switch.slider:before {
   position: absolute;
   left: 0;
 }
+
 label.switch span.switch.slider:after {
   content: "";
   width: 2ex;
@@ -31,24 +34,27 @@ label.switch span.switch.slider:after {
   top: 0.1ex;
   transition: 0.2s;
 }
+
 label.switch.socket input[type="radio"]:checked + span.slider:before {
   content: "";
   text-indent: 0.5ex;
   background: #5271ff;
 }
+
 label.switch.socket input[type="radio"]:checked + span.slider:after {
   left: 3.4ex;
 }
 
 .check-group {
   display: flex;
-  margin-top: 20px;
+  margin: 20px 0;
+  gap: 2rem;
 }
 
 .input-group {
   display: flex;
   gap: 12px;
-  margin-top: 20px;
+  margin: 20px 0;
 }
 
 .input {
@@ -56,8 +62,9 @@ label.switch.socket input[type="radio"]:checked + span.slider:after {
   color: #a6a6a6;
   border: 0;
   border-bottom: 2px solid #5271ff;
-  margin: 0 auto;
-  width: 100%;
+  max-width: 100%;
+  width: 200px;
+  height: 30px;
 }
 
 .input:focus {
@@ -68,5 +75,11 @@ label.switch.socket input[type="radio"]:checked + span.slider:after {
   background-color: #a6a6a665;
   padding: 10px;
   margin: 10px;
-  border-radius: 10px;
+  border-radius: 5.5ex;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.check {
+  margin: 20px 0;
 }
