@@ -14,70 +14,73 @@
   </head>
   <body>
     <main class="container">
-      <form class="form-reserva">
-        <fieldset class="input-group">
-          <legend class="subtitle">Información Personal</legend> 
-          <div> 
-            <label> 
-              <input
-                type="text"
-                name="nombre"
-                id="nombre"
-                placeholder="Nombre"
-                class="input"
-                required
-                pattern="[a-zA-Z]+"
-              />
-            </label>
-          <label> 
+      <form class="container">
+        <!-- personal -->
+        <fieldset class="container-personal">
+          <legend class="subtitle">Información Personal</legend>
+          <label>
             <input
               type="text"
-              name="Apellidos"
-              id="Apellidos"
+              name="nombre"
+              id="nombre"
+              placeholder="Nombre completo"
+              class="input"
+              pattern="[a-zA-Z]"
+              minlength="2"
+              required
+            />
+          </label>
+          <label>
+            <input
+              type="text"
+              name="apellidos"
+              id="apellidos"
               placeholder="Apellidos"
               class="input"
+              pattern="[a-zA-Z]"
+              minlength="2"
               required
             />
           </label>
-          <label>  
-            <input
-              type="text"
-              name="Tipo de documento"
-              id="Tipo de documento"
-              placeholder="Tipo de documento"
+          <label>
+            <select
+              name="tipoDocumento"
+              id="tipoDocumento"
               class="input"
               required
+            >
+              <option>Tipo de documento</option>
+            </select>
+          </label>
+          <label>
+            <input
+              type="text"
+              name="documento"
+              id="documento"
+              placeholder="Numero de documento"
+              class="input"
+              minlength="10"
+              maxlength="12"
+              required
             />
           </label>
-            <label> 
-              <input
-                type="text"
-                name="Numero de id"
-                id="Numero de id"
-                placeholder="Numero de id"
-                class="input"
-                required
-                minlength="10"
-                maxlength="12"
-                
-              />
-            </label>
-            <label> 
-              <input
-                type="date"
-                name="Fecha de nacimiento"
-                id="Fecha de nacimiento"
-                placeholder="Fecha de nacimiento"
-                class="input"
-                required
-              />
-            </label>
-            
+          <label>
+            <input
+              type="date"
+              name="fechaNacimiento"
+              id="fechaNacimiento"
+              class="input"
+              max="2006-01-31"
+              required
+            />
+          </label>
+          <div class="check-group">
             <label class="switch socket">
               <input
                 type="radio"
                 class="switch"
                 name="sexo"
+                checked
               />
               <span class="switch slider" />
               Hombre
@@ -91,54 +94,65 @@
               <span class="switch slider" />
               Mujer
             </label>
+          </div>
         </fieldset>
-            <fieldset>
-                <legend class="subtitle">Información de contacto</legend> 
-                <div> 
-                  <label>
-                    <input
-                      type="tel"
-                      name="Número de teléfono"
-                      id="Número de teléfono"
-                      placeholder="Numero de teléfono"
-                      class="input"
-                      required
-                      pattern="[0-9]+"
-                      minlength="10"
-                      maxlength="10"
-                    />
-                  </label>
-                <label>
-                  <input
-                    type="email"
-                    name="Correo electrónico"
-                    id="Correo electrónico"
-                    placeholder="Correo electrónico"
-                    class="input"
-                    required
-                  />
-                </label>
-                <label> 
-                  <input
-                    type="text"
-                    name="Dirección"
-                    id="Dirección"
-                    placeholder="Dirección"
-                    class="input"
-                    required
-                  />
-                </label>
-                    <input
-                      type="text"
-                      name="Ciudad"
-                      id="Ciudad"
-                      placeholder="Ciudad"
-                      class="input"
-                      required
-                    />
-                  </label>
-             </fieldset>  
-        <input type="submit" value="Reservar">
+        <!-- contacto -->
+        <fieldset class="container-contacto">
+          <legend class="subtitle">Información de contacto</legend>
+          <label>
+            <input
+              type="tel"
+              name="contacto"
+              id="contacto"
+              placeholder="Numero de teléfono"
+              class="input"
+              required
+              pattern="[0-9]{10}"
+              minlength="10"
+            />
+          </label>
+          <label>
+            <input
+              type="email"
+              name="Correo electrónico"
+              id="Correo electrónico"
+              placeholder="Correo electrónico"
+              class="input"
+              required
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}"
+              minlength="11"
+              maxlength="50"
+            />
+          </label>
+          <label>
+            <input
+              type="text"
+              name="Dirección"
+              id="Dirección"
+              placeholder="Dirección"
+              class="input"
+              required
+              pattern="[A-Z][A-Z\s\x27,.-]+"
+              minlength="6"
+            />
+          </label>
+          <label>
+            <select
+              name="ciudad"
+              id="ciudad"
+              class="input"
+              required
+            >
+              <option>Ciudad</option>
+            </select>
+          </label>
+        </fieldset>
+        <button
+          type="submit"
+          class="btn"
+        >
+          CONTINUAR
+        </button>
       </form>
     </main>
   </body>
