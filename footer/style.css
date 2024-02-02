@@ -1,5 +1,5 @@
 .subtitle {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: 500;
   color: #5271ff;
   margin-bottom: 1rem;
@@ -56,13 +56,11 @@ footer {
   display: flex;
   justify-content: center;
   gap: 3rem;
-
 }
 .social p {
   font-size: 1rem;
   font-weight: bold;
   color: #5271ff;
-  text-shadow: #00000085 0px 0px 2px;
 }
 
 a {
