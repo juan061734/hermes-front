@@ -1,3 +1,28 @@
+:root{
+  --blue-90: #eaf8ff;
+  --blue-100:#D9D9D9;
+  --blue-110:#A6A6A6;
+  --blue-200: #c1e2ff;
+  --blue-300: #9ecaff;
+  --blue-400: #759eff;
+  --blue-500: #5271ff;
+  --blue-600: #3741f6;
+  --blue-700: #2f2cd8;
+  --blue-800: #2b25ad;
+  --blue-900: #2c2588;
+  --blue-950: #201650;
+  --upper: uppercase;
+  --radius: 3ex;
+}
+
+body{
+  background-color: var(--blue-100);
+}
+
+main {
+  padding: 20px 0;
+}
+
 input[type="radio"].switch {
   display: none;
 }
@@ -5,68 +30,96 @@ input[type="radio"].switch {
 label.switch.socket {
   position: relative;
   width: auto;
-  text-indent: 6ex;
+  text-indent: 3ex;
 }
+
 span.switch.slider {
   display: inline-block;
 }
+
 label.switch.socket span.switch.slider:before {
   content: "";
   text-indent: 2.3ex;
   width: 5.5ex;
   height: 2.2ex;
-  background: #a6a6a6;
-  border-radius: 5.5ex;
+  background: var(--blue-100);
+  border-radius: var(--radius);
   position: absolute;
   left: 0;
 }
+
 label.switch span.switch.slider:after {
   content: "";
   width: 2ex;
   height: 2ex;
-  background: #fff;
-  border-radius: 5.5ex;
+  background: var(--blue-110);
+  border-radius: var(--radius);
   position: absolute;
   left: 0.1ex;
   top: 0.1ex;
   transition: 0.2s;
 }
+
 label.switch.socket input[type="radio"]:checked + span.slider:before {
   content: "";
   text-indent: 0.5ex;
-  background: #5271ff;
+  background: var(--blue-500);
 }
+
 label.switch.socket input[type="radio"]:checked + span.slider:after {
   left: 3.4ex;
 }
 
 .check-group {
   display: flex;
-  margin-top: 20px;
+  margin: 20px 0;
+  gap: 2rem;
 }
 
 .input-group {
   display: flex;
   gap: 12px;
-  margin-top: 20px;
+  margin: 20px 0;
 }
 
 .input {
   background-color: transparent;
-  color: #a6a6a6;
-  border: 0;
-  border-bottom: 2px solid #5271ff;
-  margin: 0 auto;
-  width: 100%;
+  border: none;
+  border-bottom: 2px solid var(--blue-500);
+  max-width: 100%;
+  width: 200px;
+  height: 30px;
+  text-transform: var(--text-mayus);
+}
+
+.input:hover {
+  outline: 1px solid var(--blue-500);
+  background-color: transparent;
 }
 
 .input:focus {
+  background-color: var(--blue-100);
   outline: none;
 }
 
+.input:disabled{
+  background-color: var(--blue-110);
+  outline: none;
+}
+
+.input:enabled{
+  color: var(--blue-500);
+}
+
 .container {
-  background-color: #a6a6a665;
+  background-color: var(--blue-110);
   padding: 10px;
   margin: 10px;
-  border-radius: 10px;
+  border-radius: var(--radius);
+  width: 70%;
+  margin: 0 auto;
+}
+
+input[type="checkbox"].check {
+  margin: 20px 0;
 }
