@@ -1,3 +1,17 @@
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "sections pqrs"
+    "hr hr"
+    "social social";
+  gap: 2rem;
+  padding: 4rem;
+}
+
 .subtitle {
   font-size: 1.5rem;
   font-weight: 500;
@@ -13,27 +27,13 @@
   margin-bottom: 1rem;
 }
 
-footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas:
-    "sections pqrs"
-    "hr hr"
-    "social social";
-  gap: 2rem;
-  padding: 4rem;
-}
-
 .sections {
   grid-area: sections;
 }
 
-.sections ul {
+.sections > ul {
+  all: unset;
   list-style: none;
-  gap: 1.2rem;
 }
 
 .pqrs {
@@ -42,27 +42,33 @@ footer {
 
 .hr {
   grid-area: hr;
-  width: auto;
+  background-color: #a6a6a6;
 }
 
 .social {
+  max-width: 100%;
   grid-area: social;
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  flex-direction: row;
+  width: 100%
 }
-.social ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 3rem;
 
-}
-.social p {
+.social > div {
+  all: unset;
   font-size: 1rem;
   font-weight: bold;
   color: #5271ff;
   text-shadow: #00000085 0px 0px 2px;
+  width: 100%;
+}
+
+.social > ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  width: 100%;
 }
 
 a {
