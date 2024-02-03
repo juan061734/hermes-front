@@ -6,7 +6,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
-    <title>Reservacion - Angela</title>
+    <title>Reservacion - Pablo</title>
     <link
       rel="stylesheet"
       href="style.css"
@@ -21,6 +21,8 @@
               type="radio"
               class="switch"
               name="reserva"
+              value="hotel"
+              id="reserva-hotel"
               checked
             />
             <span class="switch slider" />
@@ -31,6 +33,7 @@
               type="radio"
               class="switch"
               name="reserva"
+              value="hotel-vuelo"
             />
             <span class="switch slider" />
             Hotel + Vuelo
@@ -40,6 +43,7 @@
               type="radio"
               class="switch"
               name="reserva"
+              value="hotel-bus"
             />
             <span class="switch slider" />
             Hotel + Bus
@@ -98,7 +102,9 @@
             ¿Tienes un código promocional?
           </label>
         </article>
+        <button class="btn">RESERVAR</button>
       </form>
     </main>
+    <script src="./reservacion.js"></script>
   </body>
 </html>
