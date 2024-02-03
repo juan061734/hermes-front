@@ -1,16 +1,16 @@
-.subtitle {
-  font-size: 1.8rem;
-  font-weight: 500;
-  color: #5271ff;
-  margin-bottom: 1rem;
-  text-shadow: #00000085 0px 0px 2px;
-}
-
-.text {
-  font-size: 1rem;
-  font-weight: 300;
-  color: #a6a6a6;
-  margin-bottom: 1rem;
+:root{
+  --blue-90: #eaf8ff;
+  --blue-100:#D9D9D9;
+  --blue-110:#A6A6A6;
+  --blue-200: #c1e2ff;
+  --blue-300: #9ecaff;
+  --blue-400: #759eff;
+  --blue-500: #5271ff;
+  --blue-600: #3741f6;
+  --blue-700: #2f2cd8;
+  --blue-800: #2b25ad;
+  --blue-900: #2c2588;
+  --blue-950: #201650;
 }
 
 footer {
@@ -27,13 +27,28 @@ footer {
   padding: 4rem;
 }
 
+.subtitle {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #5271ff;
+  margin-bottom: 1rem;
+  text-shadow: #00000085 0px 0px 2px;
+}
+
+.text {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #a6a6a6;
+  margin-bottom: 1rem;
+}
+
 .sections {
   grid-area: sections;
 }
 
-.sections ul {
+.sections > ul {
+  all: unset;
   list-style: none;
-  gap: 1.2rem;
 }
 
 .pqrs {
@@ -42,25 +57,33 @@ footer {
 
 .hr {
   grid-area: hr;
-  width: auto;
+  background-color: #a6a6a6;
 }
 
 .social {
+  max-width: 100%;
   grid-area: social;
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  flex-direction: row;
+  width: 100%
 }
-.social ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 3rem;
-}
-.social p {
+
+.social > div {
+  all: unset;
   font-size: 1rem;
   font-weight: bold;
   color: #5271ff;
+  text-shadow: #00000085 0px 0px 2px;
+  width: 100%;
+}
+
+.social > ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  width: 100%;
 }
 
 a {
