@@ -1,3 +1,18 @@
+:root{
+  --blue-90: #eaf8ff;
+  --blue-100:#D9D9D9;
+  --blue-110:#A6A6A6;
+  --blue-200: #c1e2ff;
+  --blue-300: #9ecaff;
+  --blue-400: #759eff;
+  --blue-500: #5271ff;
+  --blue-600: #3741f6;
+  --blue-700: #2f2cd8;
+  --blue-800: #2b25ad;
+  --blue-900: #2c2588;
+  --blue-950: #201650;
+}
+
 footer {
   position: fixed;
   bottom: 0;
