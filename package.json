@@ -1,8 +1,19 @@
 {
+  
+  "name": "hermes-front",
+  "description": "- Diseño y maquetación de un inicio de sesión y registro de usuarios.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm install"
+  },
+  "keywords": [],
+  "author": "Hermesianos",
+  "license": "ISC",
   "devDependencies": {
     "standard": "17.1.0"
-  },"eslintConfig": {
-    "extends":"./node_modules/standard/eslintrc.json"
+  },
+  "eslintConfig": {
+    "extends": "./node_modules/standard/eslintrc.json"
   }
-
 }
